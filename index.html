@@ -3,9 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bilmegling.no – Norges ledende bilmeglerplattform</title>
-<meta name="description" content="Bilmegling.no matcher deg med en lokal bilmegler. Gratis forespørsel – ingen betaling før bilen er solgt.">
+<title>Bilmegling.no | Selg bilen med lokal bilmegler i hele Norge</title>
+<meta name="description" content="Selg bilen din raskt og trygt med en lokal bilmegler. Gratis forespørsel, ingen betaling før bilen er solgt. Vi dekker hele Norge.">
 <link rel="canonical" href="https://bilmegling.no/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bilmegling.no/">
+<meta property="og:title" content="Bilmegling.no | Selg bilen med lokal bilmegler i hele Norge">
+<meta property="og:description" content="Selg bilen din raskt og trygt med en lokal bilmegler. Gratis forespørsel, ingen betaling før bilen er solgt. Vi dekker hele Norge.">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:site_name" content="Bilmegling.no">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bilmegling.no | Selg bilen med lokal bilmegler i hele Norge">
+<meta name="twitter:description" content="Selg bilen din raskt og trygt med en lokal bilmegler. Gratis forespørsel, ingen betaling før bilen er solgt.">
+
+<!-- Robots -->
+<meta name="robots" content="index, follow">
+
+<!-- JSON-LD strukturert data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bilmegling.no/#org",
+      "name": "Bilmegling.no",
+      "url": "https://bilmegling.no/",
+      "description": "Norges ledende plattform for profesjonelt bilsalg med lokale bilmeglere over hele landet.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Norge"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bilmegling.no/#website",
+      "url": "https://bilmegling.no/",
+      "name": "Bilmegling.no",
+      "publisher": {"@id": "https://bilmegling.no/#org"},
+      "inLanguage": "nb-NO"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bilmegling.no/#webpage",
+      "url": "https://bilmegling.no/",
+      "name": "Selg bilen med lokal bilmegler i hele Norge",
+      "description": "Selg bilen din raskt og trygt med en lokal bilmegler. Gratis forespørsel, ingen betaling før bilen er solgt.",
+      "isPartOf": {"@id": "https://bilmegling.no/#website"},
+      "inLanguage": "nb-NO"
+    },
+    {
+      "@type": "Service",
+      "name": "Bilmegling",
+      "provider": {"@id": "https://bilmegling.no/#org"},
+      "description": "Profesjonell bilmegling der lokal megler håndterer verdivurdering, annonsering, forhandling og trygt oppgjør.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Norge"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "NOK",
+        "description": "Gratis forespørsel og verdivurdering. Meglerhonorar kun ved salg."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hva koster det å bruke bilmegler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Forespørsel og verdivurdering er helt gratis. Meglerhonorar på 14 990 til 24 990 kr betales kun når bilen er solgt. Ingen salg betyr ingen kostnad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvor lang tid tar det å selge bilen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bilmegling.no garanterer maksimalt 60 dager fra oppdrag til solgt bil."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jeg beholde bilen mens den er til salgs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, du kjører bilen som normalt frem til salget er gjennomført. Ingen innlevering er nødvendig."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -63,7 +161,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
   max-width:var(--max);width:100%;margin:0 auto;padding:0 40px;gap:1rem;
 }
 
-.logo{font-size:1.2rem;font-weight:800;color:#fff;letter-spacing:-.02em;flex-shrink:0}
+.logo{flex-shrink:0;text-decoration:none;font-size:1.55rem;font-weight:300;color:var(--y);letter-spacing:.32em;text-transform:uppercase;font-family:'Plus Jakarta Sans',sans-serif}
 
 /* Rydex søkepill — Models dropdown + Search input + hamburgermeny */
 .hdr-right{display:flex;align-items:center;gap:.75rem}
@@ -507,7 +605,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
 /* ━━━━━━━━━━━━━━━ FOOTER ━━━━━━━━━━━━━━━ */
 .site-footer{padding:72px 0 40px;border-top:1px solid var(--border)}
 .ftr-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:3.5rem;border-bottom:1px solid var(--border);margin-bottom:2.5rem}
-.ftr-logo{font-size:1.4rem;font-weight:800;color:#fff;letter-spacing:-.025em;display:block;margin-bottom:.85rem}
+.ftr-logo{font-size:1.35rem;font-weight:300;color:var(--y);letter-spacing:.32em;text-transform:uppercase;display:block;margin-bottom:.85rem}
 .ftr-desc{font-size:.83rem;color:var(--muted);line-height:1.72;margin-bottom:1.5rem;max-width:210px}
 .fcol h5{font-size:.67rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1.1rem}
 .fcol ul{list-style:none}
@@ -553,6 +651,17 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
   body{padding-bottom:76px}
   .mob-menu{right:20px}
 }
+/* ━━━━ FAQ ━━━━ */
+.faq-list{display:flex;flex-direction:column;gap:1px;margin-top:2.5rem}
+.faq-item{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--border)}
+.faq-item summary{
+  padding:1.25rem 1.5rem;cursor:pointer;font-weight:700;font-size:1rem;color:#fff;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.5rem;color:var(--y);flex-shrink:0;line-height:1}
+.faq-item[open] summary::after{content:'−'}
+.faq-item p{padding:0 1.5rem 1.25rem;color:var(--muted2);line-height:1.75}
 </style>
 </head>
 <body>
@@ -560,13 +669,13 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
 <!-- ━━━━ HEADER ━━━━ -->
 <header class="site-header" id="hdr">
   <div class="hdr">
-    <a href="/" class="logo">Bilmegling.no</a>
+    <a href="/" class="logo" aria-label="Bilmegling.no forside">Bilmegling</a>
 
     <nav class="desk-nav">
-      <a href="/selge bil/">Selge bil</a>
+      <a href="/selge-bil/">Selge bil</a>
       <a href="/bilmegler/">Bilmegler</a>
-      <a href="/bilmegling pris/">Priser</a>
-      <a href="/bilmegling norge/">Landsdekning</a>
+      <a href="/bilmegling-pris/">Priser</a>
+      <a href="/bilmegling-norge/">Landsdekning</a>
     </nav>
 
     <div class="hdr-right">
@@ -593,10 +702,10 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
 <!-- Floating mob-meny — Rydex-stil -->
 <div class="mob-menu" id="mob-menu">
   <a href="/">Hjem</a>
-  <a href="/selge bil/">Selge bil</a>
+  <a href="/selge-bil/">Selge bil</a>
   <a href="/bilmegler/">Bilmegler</a>
-  <a href="/bilmegling pris/">Priser</a>
-  <a href="/bilmegling norge/">Landsdekning</a>
+  <a href="/bilmegling-pris/">Priser</a>
+  <a href="/bilmegling-norge/">Landsdekning</a>
   <a href="/partner/">For meglere</a>
   <a href="#kontakt" class="mob-cta">
     <span>Gratis forespørsel</span>
@@ -617,12 +726,12 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
     <span class="hs-loc">Oslo, Norge</span>
     <span class="hs-dash"></span>
     <span class="hs-tag">Norges ledende bilmeglerplattform</span>
-    <span class="hs-r">Gratis forespørsel · lokal megler · ingen betaling før salg</span>
+    <span class="hs-r">Gratis forespørsel · lokal megler · ingen betaling ved salg</span>
   </div>
 
   <div class="hero-main">
     <div class="eyebrow rv">Bilmegling</div>
-    <h1 id="hero-h1" class="hero-h1 rv d1">Selg bilen din,<br>på din måte</h1>
+    <h1 id="hero-h1" class="hero-h1 rv d1">Selg bilen trygt,<br>med lokal bilmegler</h1>
     <div class="hero-split rv d2">
       <a href="#kontakt" class="hspl">
         Send gratis forespørsel
@@ -645,8 +754,8 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
       <h2 id="about-h" class="about-h rv d1">
         Drevet av lidenskap,<br>bygget på tillit
       </h2>
-      <p class="about-p rv d2">Vi matcher privatpersoner med erfarne, lokale bilmeglere over hele Norge. Megleren håndterer alt fra verdivurdering og annonsering til forhandling og trygt oppgjør – du kjører bilen som normalt frem til salg.</p>
-      <a href="/selge bil/" class="btn-r rv d3">
+      <p class="about-p rv d2">Vi matcher privatpersoner med erfarne, lokale bilmeglere over hele Norge. Megleren tar seg av alt fra verdivurdering og annonsering til forhandling og trygt oppgjør. Du kjører bilen som normalt frem til salg.</p>
+      <a href="/selge-bil/" class="btn-r rv d3">
         <span class="btn-r-txt">Les mer om oss</span>
         <span class="btn-r-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
@@ -659,7 +768,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
   <div class="wrap">
     <div class="eyebrow rv">Hvem er vi</div>
     <h2 id="who-h" class="who-h rv d1">
-      Norges tryggeste vei til et vellykket bilsalg.
+      Norges tryggeste vei til et vellykket bilsalg
     </h2>
     <div class="who-dot" aria-hidden="true"></div>
     <p class="who-p rv d2">
@@ -710,7 +819,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
         <div class="eyebrow rv">Tjenester</div>
         <h2 id="models-h" class="rv d1">Profesjonelt bilsalg,<br>fra start til slutt</h2>
       </div>
-      <p class="models-hd-r rv d1">Alt du trenger – én megler, én prosess, null stress.</p>
+      <p class="models-hd-r rv d1">Alt du trenger. En megler, en prosess, null stress.</p>
     </div>
     <div class="model-big rv d2">
       <div class="mb-bg"></div>
@@ -736,7 +845,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
       <div class="model-sm rv d2"><div class="ms-bg b3"></div><div class="ms-inner"><div class="ms-name">Bil med lån</div><div class="ms-sub">Megleren ordner banken</div></div></div>
     </div>
     <div class="see-all-row rv d3">
-      <a href="/selge bil/" class="btn-ry btn-r">
+      <a href="/selge-bil/" class="btn-ry btn-r">
         <span class="btn-r-txt">Se alle tjenester</span>
         <span class="btn-r-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
@@ -857,7 +966,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
               <div class="tl-ydot"></div>
               <div class="tl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 15v-3l3-6h12l3 6v3H3z"/><circle cx="7" cy="16.5" r="1.75"/><circle cx="17" cy="16.5" r="1.75"/></svg></div>
               <h3>Velg din lokale megler</h3>
-              <p>En erfaren megler i ditt område kontakter deg innen én arbeidsdag med konkret verdivurdering.</p>
+              <p>En erfaren megler i ditt område kontakter deg innen en arbeidsdag med konkret verdivurdering.</p>
             </div>
           </div>
           <div class="tl-step rv d3">
@@ -885,7 +994,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
           <div class="fb-topbar"></div>
           <div class="fb-body">
             <h3>Send gratis forespørsel</h3>
-            <p class="fb-sub">Vi matcher deg med riktig megler. Svar innen én arbeidsdag.</p>
+            <p class="fb-sub">Vi matcher deg med riktig megler. Svar innen en arbeidsdag.</p>
             <div class="fstepper">
               <div class="fstp active" id="stp1"><div class="fstp-c">1</div><div class="fstp-l">Bilen</div></div>
               <div class="fstp-line" id="sl1"></div>
@@ -903,7 +1012,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
                   <div class="fg"><label>Årsmodell *</label><input id="f-ar" type="number" placeholder="2020"><div class="fg-err" id="e-ar">Obligatorisk.</div></div>
                   <div class="fg"><label>Km-stand *</label><input id="f-km" type="number" placeholder="65000"><div class="fg-err" id="e-km">Obligatorisk.</div></div>
                 </div>
-                <div class="fnav"><button class="fn-next" id="fn1">Neste →</button></div>
+                <div class="fnav"><button class="fn-next" id="fn1">Neste</button></div>
               </div>
               <div class="fstep" id="fs2">
                 <div class="frow2">
@@ -912,7 +1021,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
                 </div>
                 <div class="fg"><label>Postnummer *</label><input id="f-po" type="text" placeholder="0150" maxlength="4" inputmode="numeric"><div class="fg-err" id="e-po">Ugyldig postnummer.</div></div>
                 <div class="fg"><label>Tilleggsinfo</label><textarea id="f-ex" placeholder="Service, utstyr, historikk…" style="min-height:70px;resize:vertical"></textarea></div>
-                <div class="fnav"><button class="fn-back" id="fp2">← Tilbake</button><button class="fn-next" id="fn2">Neste →</button></div>
+                <div class="fnav"><button class="fn-back" id="fp2">Tilbake</button><button class="fn-next" id="fn2">Neste</button></div>
               </div>
               <div class="fstep" id="fs3">
                 <div class="fg"><label>Fullt navn *</label><input id="f-na" type="text" placeholder="Ditt fulle navn"><div class="fg-err" id="e-na">Obligatorisk.</div></div>
@@ -920,14 +1029,14 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
                   <div class="fg"><label>Telefon *</label><input id="f-tl" type="tel" placeholder="99 88 77 66"><div class="fg-err" id="e-tl">Ugyldig nummer.</div></div>
                   <div class="fg"><label>E-post *</label><input id="f-ep" type="email" placeholder="din@epost.no"><div class="fg-err" id="e-ep">Ugyldig e-post.</div></div>
                 </div>
-                <div class="fnav"><button class="fn-back" id="fp3">← Tilbake</button><button class="fn-next" id="fsub">Send forespørsel</button></div>
+                <div class="fnav"><button class="fn-back" id="fp3">Tilbake</button><button class="fn-next" id="fsub">Send forespørsel</button></div>
                 <p class="fnote">Ved innsending godtar du <a href="/vilkar/">vilkårene</a> og <a href="/personvern/">personvern</a>.</p>
               </div>
             </div>
             <div class="f-ok" id="fok" role="alert">
               <div class="f-ok-big">✓</div>
               <h3>Forespørsel mottatt!</h3>
-              <p>En lokal bilmegler kontakter deg innen én arbeidsdag.</p>
+              <p>En lokal bilmegler kontakter deg innen en arbeidsdag.</p>
               <div class="lead-code" id="lead-code">BM-XXXXXX</div>
             </div>
           </div>
@@ -945,40 +1054,70 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='htt
         <div class="eyebrow rv">Guider</div>
         <h2 id="blog-h" class="rv d1">Alt om profesjonelt bilsalg</h2>
       </div>
-      <a href="/selge bil/" class="btn-ry btn-r rv d2">
+      <a href="/selge-bil/" class="btn-ry btn-r rv d2">
         <span class="btn-r-txt">Se alle guider</span>
         <span class="btn-r-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
     </div>
     <div class="blog-grid">
-      <a href="/selge bil/" class="blog-card rv"><div class="bc-bg p1"></div><div class="bc-ov"></div><div class="bc-content"><div class="bc-tag">Guide</div><div class="bc-title">Komplett guide til å selge bil med bilmegler i 2025</div></div></a>
-      <a href="/selge elbil/" class="blog-card rv d1"><div class="bc-bg p2"></div><div class="bc-ov"></div><div class="bc-content"><div class="bc-tag">Elbil</div><div class="bc-title">Slik selger du elbilen profesjonelt – alt du trenger å vite</div></div></a>
-      <a href="/bilmegling pris/" class="blog-card rv d2"><div class="bc-bg p3"></div><div class="bc-ov"></div><div class="bc-content"><div class="bc-tag">Priser</div><div class="bc-title">Hva koster bilmegling? Full prisguide med kalkulator</div></div></a>
+      <a href="/selge-bil/" class="blog-card rv"><div class="bc-bg p1"></div><div class="bc-ov"></div><div class="bc-content"><div class="bc-tag">Guide</div><div class="bc-title">Komplett guide til å selge bil med bilmegler i 2025</div></div></a>
+      <a href="/selge-elbil/" class="blog-card rv d1"><div class="bc-bg p2"></div><div class="bc-ov"></div><div class="bc-content"><div class="bc-tag">Elbil</div><div class="bc-title">Slik selger du elbilen profesjonelt og alt du trenger å vite</div></div></a>
+      <a href="/bilmegling-pris/" class="blog-card rv d2"><div class="bc-bg p3"></div><div class="bc-ov"></div><div class="bc-content"><div class="bc-tag">Priser</div><div class="bc-title">Hva koster bilmegling? Full prisguide med kalkulator</div></div></a>
     </div>
   </div>
 </section>
 
 </main>
 
+<!-- Sporsmal og svar -->
+<section class="faq-sec sec" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="eyebrow rv">Sporsmal og svar</div>
+    <h2 id="faq-h" class="rv d1">Vanlige sporsmal om bilmegling</h2>
+    <div class="faq-list rv d2">
+      <details class="faq-item">
+        <summary>Hva koster det a bruke bilmegler?</summary>
+        <p>Forespørsel og verdivurdering er helt gratis. Du betaler kun meglerhonorar pa 14 990 til 24 990 kr, og bare hvis bilen faktisk selges. Ingen salg betyr ingen kostnad for deg.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kan jeg beholde bilen mens den er til salgs?</summary>
+        <p>Ja. Du kjorer bilen som normalt frem til salget er gjennomfort. Det er ingen innlevering og ingen ulempe i hverdagen din.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Hvor lang tid tar det a selge bilen?</summary>
+        <p>Bilmegling.no garanterer maksimalt 60 dager fra oppdrag til solgt bil. Mange biler selges raskere, avhengig av biltype og marked.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Hva gjor bilmegleren for meg?</summary>
+        <p>Megleren tar seg av hele prosessen: verdivurdering, klargjoring, profesjonell fotografering, annonsering, visninger, prisforhandling, kontrakt, eierskifte og trygt oppgjor via klientkonto.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Dekker dere hele Norge?</summary>
+        <p>Ja, vi har lokale bilmeglere i over 12 byer og regioner i Norge, blant annet Oslo, Bergen, Trondheim, Stavanger og Tromso.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ━━━━ FOOTER ━━━━ -->
 <footer class="site-footer" role="contentinfo">
   <div class="wrap">
     <div class="ftr-grid">
       <div>
-        <span class="ftr-logo">Bilmegling.no</span>
+        <span class="ftr-logo">Bilmegling</span>
         <p class="ftr-desc">Norges ledende plattform for profesjonelt bilsalg. Lokal megler, trygt oppgjør, hele landet.</p>
         <a href="#kontakt" class="btn-ry btn-r">
           <span class="btn-r-txt">Gratis forespørsel</span>
           <span class="btn-r-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </a>
       </div>
-      <div class="fcol"><h5>Tjenester</h5><ul><li><a href="/selge bil/">Selge bil</a></li><li><a href="/bilmegler/">Bilmegler</a></li><li><a href="/bilmegling pris/">Priser</a></li><li><a href="/bilmegling norge/">Landsdekning</a></li><li><a href="/partner/">For meglere</a></li></ul></div>
-      <div class="fcol"><h5>Guider</h5><ul><li><a href="/selge bruktbil/">Selge bruktbil</a></li><li><a href="/selge elbil/">Selge elbil</a></li><li><a href="/selge bil med lan/">Bil med lån</a></li><li><a href="/kontrakt og oppgjor/">Oppgjør</a></li><li><a href="/klargjoring for bilsalg/">Klargjøring</a></li></ul></div>
-      <div class="fcol"><h5>Byer</h5><ul><li><a href="/bilmegling norge/#oslo">Oslo</a></li><li><a href="/bilmegling norge/#bergen">Bergen</a></li><li><a href="/bilmegling norge/#trondheim">Trondheim</a></li><li><a href="/bilmegling norge/#stavanger">Stavanger</a></li><li><a href="/bilmegling norge/">Alle byer →</a></li></ul></div>
+      <div class="fcol"><h5>Tjenester</h5><ul><li><a href="/selge-bil/">Selge bil</a></li><li><a href="/bilmegler/">Bilmegler</a></li><li><a href="/bilmegling-pris/">Priser</a></li><li><a href="/bilmegling-norge/">Landsdekning</a></li><li><a href="/partner/">For meglere</a></li></ul></div>
+      <div class="fcol"><h5>Guider</h5><ul><li><a href="/selge-bruktbil/">Selge bruktbil</a></li><li><a href="/selge-elbil/">Selge elbil</a></li><li><a href="/selge-bil-med-lan/">Bil med lån</a></li><li><a href="/kontrakt-og-oppgjor/">Oppgjør</a></li><li><a href="/klargjoring-for-bilsalg/">Klargjøring</a></li></ul></div>
+      <div class="fcol"><h5>Byer</h5><ul><li><a href="/bilmegling-norge/#oslo">Oslo</a></li><li><a href="/bilmegling-norge/#bergen">Bergen</a></li><li><a href="/bilmegling-norge/#trondheim">Trondheim</a></li><li><a href="/bilmegling-norge/#stavanger">Stavanger</a></li><li><a href="/bilmegling-norge/">Alle byer</a></li></ul></div>
       <div class="fcol"><h5>Selskapet</h5><ul><li><a href="/partner/">Bli partner</a></li><li><a href="/personvern/">Personvern</a></li><li><a href="/vilkar/">Vilkår</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
     </div>
     <div class="ftr-btm">
-      <p>© 2025 Bilmegling.no — Alle rettigheter forbeholdt</p>
+      <p style="color:rgba(255,255,255,.5)">© 2026 Bilmegling.no. Alle rettigheter forbeholdt. En del av <a href="https://it-firma.no" style="color:var(--y);font-weight:700" target="_blank" rel="noopener">IT-FIRMA</a></p>
       <nav class="ftr-legal"><a href="/personvern/">Personvern</a><a href="/vilkar/">Vilkår</a></nav>
     </div>
   </div>
